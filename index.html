@@ -1,172 +1,153 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarWorkShop - Ваш надійний автомайстер</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            color: #fff;
-            text-align: center;
-            padding: 40px 20px;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 20px auto;
-        }
-        h2 {
-            color: #203a43;
-            margin-bottom: 15px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background: #203a43;
-            color: #fff;
-        }
-        .photo-section img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        .packages ul {
-            list-style: none;
-            padding: 0;
-        }
-        .packages ul li {
-            margin-bottom: 10px;
-        }
-        footer {
-            background: #0f2027;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        .contacts {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .contacts h3 {
-            color: #203a43;
-            margin-top: 0;
-        }
-        .contacts p {
-            margin: 5px 0;
-        }
-        .highlight {
-            color: #2c5364;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarWorkShop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f5f5f5;
+    }
+    header {
+      background-color: #1a73e8;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    section {
+      max-width: 1200px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #1a73e8;
+      border-bottom: 2px solid #1a73e8;
+      padding-bottom: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      table-layout: fixed; /* фиксированная ширина ячеек */
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      font-size: 0.9rem; /* уменьшенный размер шрифта */
+    }
+    th {
+      background-color: #f1f1f1;
+    }
+    .table-container {
+      overflow-x: auto; /* добавлена горизонтальная прокрутка */
+    }
+    .contact-info {
+      margin-top: 20px;
+    }
+    .contact-info p {
+      margin: 10px 0;
+    }
+    footer {
+      background-color: #1a73e8;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+    .promotions {
+      margin-top: 20px;
+    }
+    .promotions ul {
+      list-style: none;
+      padding: 0;
+    }
+    .promotions li {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
-
-<header>
+  <header>
     <h1>CarWorkShop</h1>
-    <p>Надійність, на яку ви можете розраховувати</p>
-</header>
+    <p>Адреса: Харків, вул. Клочківська 337</p>
+  </header>
+  
+  <section>
+    <h2>Прайс-лист</h2>
+    <p><strong>Ціни вказані без урахування вартості запчастин та витратних матеріалів.</strong></p>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Послуга</th>
+            <th>Ціна грн (₴)</th>
+            <th>Час (годин)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Діагностика</td><td>від 300</td><td>1</td></tr>
+          <tr><td>Ремонт ходової</td><td>від 350</td><td>1.75</td></tr>
+          <tr><td>Замена рессор</td><td>від 850</td><td>2</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>Почасова оплата:</strong> 200 грн/год (якщо робота займає більше часу).</p>
+  </section>
 
-<div class="container">
-    <section>
-        <h2>Ціни на послуги</h2>
-        <p><strong>Ціни вказані без урахування вартості запчастин і витратних матеріалів.</strong></p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Послуга</th>
-                    <th>Ціна, грн (₴)</th>
-                    <th>Час виконання (годин)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Діагностика</td>
-                    <td>від 300</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>Ремонт ходової</td>
-                    <td>від 350</td>
-                    <td>1.75</td>
-                </tr>
-                <tr>
-                    <td>Заміна рессор</td>
-                    <td>від 850</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>Заміна прокладок</td>
-                    <td>від 560</td>
-                    <td>2-3</td>
-                </tr>
-                <tr>
-                    <td>Заміна коліс</td>
-                    <td>від 400</td>
-                    <td>1</td>
-                </tr>
-                <!-- Здесь можно добавить остальные услуги -->
-            </tbody>
-        </table>
-    </section>
+  <section>
+    <h2>Акції</h2>
+    <div class="promotions">
+      <h3>Пакетні пропозиції:</h3>
+      <ul>
+        <li>
+          <strong>1. Тормозний пакет</strong><br>
+          - Заміна тормозних колодок<br>
+          - Заміна тормозних дисків та барабанів<br>
+          - Заміна тормозних шлангів<br>
+          <strong>Ціна:</strong> від 1400 грн (економія 100 грн)
+        </li>
+        <li>
+          <strong>2. Підвіска і ресори</strong><br>
+          - Заміна амортизаторів<br>
+          - Заміна ресор<br>
+          - Заміна сайлентблоків<br>
+          <strong>Ціна:</strong> від 1400 грн (економія 150 грн)
+        </li>
+        <li>
+          <strong>3. Рулевой пакет</strong><br>
+          - Регулировка розвалу-схождення<br>
+          - Заміна рулевих наконечників<br>
+          - Заміна рулевих тяг<br>
+          <strong>Ціна:</strong> від 1300 грн (економія 150 грн)
+        </li>
+        <li>
+          <strong>4. Фільтри і свічки</strong><br>
+          - Заміна топливного фільтра<br>
+          - Заміна масляного фільтра<br>
+          - Заміна повітряного фільтра<br>
+          - Заміна свічок запалювання<br>
+          <strong>Ціна:</strong> від 900 грн (економія 100 грн)
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <section class="packages">
-        <h2>Акції</h2>
-        <p><strong>Пакетні пропозиції:</strong></p>
-        <ul>
-            <li><span class="highlight">Гальмівний пакет:</span> Заміна колодок, дисків і шлангів - від 1400 грн (економія 100 грн).</li>
-            <li><span class="highlight">Підвіска:</span> Заміна амортизаторів і рессор - від 1400 грн (економія 150 грн).</li>
-<li><span class="highlight">Рульовий пакет:</span> Регулювання розвалу-сходження і заміна тяг - від 1300 грн (економія 150 грн).</li>
-        </ul>
-    </section>
-
-    <section class="photo-section">
-        <h2>Наші роботи</h2>
-        <img src="https://via.placeholder.com/1200x600" alt="Фото майстерні">
-    </section>
-
-    <section class="contacts">
-        <h3>Контакти</h3>
-        <p><strong>Адреса:</strong> м. Харків, вул. Клочківська, 337</p>
-        <p><strong>Телефон:</strong> +380 (99) 123-45-67</p>
-        <p><strong>Email:</strong> carworkshop@example.com</p>
-        <p><strong>Погодинна ставка:</strong> 200 грн/година</p>
-    </section>
-</div>
-
-<footer>
-    <p>&copy; 2024 CarWorkShop. Всі права захищені.</p>
-</footer>
-
+  <footer>
+    <p>© 2025 CarWorkShop. Всі права захищені.</p>
+  </footer>
 </body>
 </html>
